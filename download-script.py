@@ -6,6 +6,7 @@ import git
 
 response = requests.get("https://api.github.com/users/arnab-shanta-anu/repos")
 repos = json.loads(response.text)
+print("totoal repos: ", len(repos))
 
 class Progress(git.remote.RemoteProgress):
 	def update(self, op_code, cur_count, max_count=None, message=''):
