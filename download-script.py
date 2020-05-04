@@ -25,12 +25,6 @@ for repo in repos:
     print(i, ") " + repo["name"]+"\t")
     i += 1
 
-op = input(
-    "options[1]:\n1.clone all\n2.clone seleceted\n3.ignore selected\n: ")
-if (op == "\n"):
-    op = 1
-switcher(op)
-
 
 class Progress(git.remote.RemoteProgress):
     def update(self, op_code, cur_count, max_count=None, message=''):
@@ -67,7 +61,14 @@ def ignoreSelected():
     download()
 
 
-def switcher(option):
-    1: downloadAll
-    2: downloadSelected
-    3: ignoreSelected
+switcher = dict{
+    '1': downloadAll
+    '2': downloadSelected
+    '3': ignoreSelected
+}
+
+op = input(
+    "options[1]:\n1.clone all\n2.clone seleceted\n3.ignore selected\n: ")
+if (op == "\n"):
+    op = 1
+switcher[op]
