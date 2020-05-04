@@ -25,9 +25,11 @@ for repo in repos:
     print(i, ") " + repo["name"]+"\t")
     i += 1
 
-op = input("options[1]:\n1.clone all\n2.clone seleceted\n3.ignore selected: ")
+op = input(
+    "options[1]:\n1.clone all\n2.clone seleceted\n3.ignore selected\n: ")
 if (op == "\n"):
     op = 1
+switcher(op)
 
 
 class Progress(git.remote.RemoteProgress):
@@ -48,8 +50,9 @@ def download():
                                 repo["name"], progress=Progress())
             print("cloning ", repo["name"])
 
-        except git.exc.GitCommandError as e:
-            print('not an empty directory\ntrying to pull from master')
+        except git.exc.GitCommandError:
+            print('not an empty directory')
+            gitPull = input('do a git pull origin master?[y/n]: ')
 
 
 def downloadAll():
@@ -62,3 +65,9 @@ def downloadSelected():
 
 def ignoreSelected():
     download()
+
+
+def switcher(option):
+    1: downloadAll
+    2: downloadSelected
+    3: ignoreSelected
