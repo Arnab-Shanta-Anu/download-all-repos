@@ -46,29 +46,44 @@ def download():
 
         except git.exc.GitCommandError:
             print('not an empty directory')
-            gitPull = input('do a git pull origin master?[y/n]: ')
+            doGitPull = input('do a git pull origin master?[y/n]: ')
+    return
 
 
 def downloadAll():
-    download()
+    # download()
+    print("in download all")
+    return
 
 
 def downloadSelected():
-    download()
+    print("in sel download all")
+    inputStr = input("Enter the repo numbers to clone[eg: 1 2 3] : ")
+    downList = inputStr.split()
+
+    # download()
+    return
 
 
 def ignoreSelected():
-    download()
+    # download()
+    print("in ign download")
+    return
 
 
-switcher = dict{
-    '1': downloadAll
-    '2': downloadSelected
-    '3': ignoreSelected
+switcher = {
+    1: downloadAll,
+    2: downloadSelected,
+    3: ignoreSelected
 }
 
 op = input(
     "options[1]:\n1.clone all\n2.clone seleceted\n3.ignore selected\n: ")
-if (op == "\n"):
+
+try:
+    op = int(op)
+
+except ValueError as e:
     op = 1
+
 switcher[op]
