@@ -19,6 +19,21 @@ saveLoc = input("enter directory name to save in[" + os.getcwd() + "]: ")
 if (saveLoc == "\n"):
     saveLoc = os.getcwd()
 
+try:
+    os.mkdir(saveLoc)
+    print("folder created")
+
+except OSError as e:
+    print(e)
+    exit(1)
+
+
+except FileExistsError as e:
+    print("folder exists")
+
+
+print("saving in "+saveLoc)
+
 print("totoal repos: ", len(repos))
 
 numOfRepo = 1
@@ -53,11 +68,11 @@ def download(downList):
 
         try:
             git.Repo.clone_from(repo["clone_url"],
-                                repo["name"], progress=Progress())
+                                saveLoc+"/"+repo["name"], progress=Progress())
             print("cloning ", repo["name"])
 
         except git.exc.GitCommandError as e:
-            print('not an empty directory')
+            print(e)
             # doGitPull = input('do a git pull origin master?[y/n]: ')
             # will implement this later
 
