@@ -26,3 +26,4 @@ then
 follow on screen instructions
 
 For windows users:
+just double click the exe file 
