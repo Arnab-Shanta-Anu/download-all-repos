@@ -58,8 +58,8 @@ def downloadAll():
 
 def downloadSelected():
     print("in sel download all")
-    inputStr = input("Enter the repo numbers to clone[eg: 1 2 3] : ")
-    downList = inputStr.split()
+    #inputStr = input("Enter the repo numbers to clone[eg: 1 2 3] : ")
+    #downList = inputStr.split()
 
     # download()
     return
@@ -72,9 +72,9 @@ def ignoreSelected():
 
 
 switcher = {
-    1: downloadAll(),
-    2: downloadSelected(),
-    3: ignoreSelected()
+    1: downloadAll,
+    2: downloadSelected,
+    3: ignoreSelected
 }
 
 op = input(
@@ -86,4 +86,5 @@ try:
 except ValueError as e:
     op = 1
 
-switcher[op]
+callFunc = switcher[op]
+callFunc()
