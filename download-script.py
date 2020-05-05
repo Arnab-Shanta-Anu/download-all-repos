@@ -13,17 +13,19 @@ if (len(repos) == 2 and repos["message"] == "Not Found"):
     print("no user in that name found\nRun program again")
     exit(1)
 
+###need to imple###
 saveLoc = input("enter directory name to save in[" + os.getcwd() + "]: ")
 
 if (saveLoc == "\n"):
     saveLoc = os.getcwd()
 
 print("totoal repos: ", len(repos))
-i = 1
+
+numOfRepo = 1
 for repo in repos:
 
-    print(i, ") " + repo["name"]+"\t")
-    i += 1
+    print(numOfRepo, ") " + repo["name"]+"\t")
+    numOfRepo += 1
 
 
 class Progress(git.remote.RemoteProgress):
@@ -37,22 +39,33 @@ def restart_line():
     sys.stdout.flush()
 
 
-def download():
+def download(downList):
+    skipFlag = False
+    if downList != "":
+        skipFlag = True
+
+    i = 0
+
     for repo in repos:
+        i += 1
+        if (skipFlag and (str(i) not in downList)):
+            continue
+
         try:
             git.Repo.clone_from(repo["clone_url"],
                                 repo["name"], progress=Progress())
             print("cloning ", repo["name"])
 
-        except git.exc.GitCommandError:
+        except git.exc.GitCommandError as e:
             print('not an empty directory')
-            # will implement later
-            #doGitPull = input('do a git pull origin master?[y/n]: ')
+            # doGitPull = input('do a git pull origin master?[y/n]: ')
+            # will implement this later
+
     return
 
 
 def downloadAll():
-    download()
+    download("")
     return
 
 
@@ -60,12 +73,26 @@ def downloadSelected():
     inputStr = input("Enter the repo numbers to clone[eg: 1 2 3] : ")
     downList = inputStr.split()
 
-    download()
+    download(downList)
     return
 
 
 def ignoreSelected():
-    download()
+    inputStr = input("Enter the repo numbers to ignore[eg: 1 2 3] : ")
+    ignList = inputStr.split()
+
+    downList = []
+
+    for x in range(1, numOfRepo):
+
+        if str(x) in ignList:
+            continue
+
+        downList.append(str(x))
+
+    print(downList)
+    download(downList)
+
     return
 
 
