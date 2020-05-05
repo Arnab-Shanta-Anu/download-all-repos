@@ -46,7 +46,8 @@ def download():
 
         except git.exc.GitCommandError:
             print('not an empty directory')
-            doGitPull = input('do a git pull origin master?[y/n]: ')
+            # will implement later
+            #doGitPull = input('do a git pull origin master?[y/n]: ')
     return
 
 
