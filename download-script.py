@@ -72,9 +72,9 @@ def ignoreSelected():
 
 
 switcher = {
-    1: downloadAll,
-    2: downloadSelected,
-    3: ignoreSelected
+    1: downloadAll(),
+    2: downloadSelected(),
+    3: ignoreSelected()
 }
 
 op = input(
