@@ -37,37 +37,35 @@ def restart_line():
     sys.stdout.flush()
 
 
-def download():
-    for repo in repos:
-        try:
-            git.Repo.clone_from(repo["clone_url"],
-                                repo["name"], progress=Progress())
-            print("cloning ", repo["name"])
+def download(numbers):
+    if numbers == "none":
+        for repo in repos:
+            try:
+                git.Repo.clone_from(repo["clone_url"],
+                                    repo["name"], progress=Progress())
+                print("cloning ", repo["name"])
 
-        except git.exc.GitCommandError:
-            print('not an empty directory')
-            doGitPull = input('do a git pull origin master?[y/n]: ')
+            except git.exc.GitCommandError:
+                print('not an empty directory')
+                doGitPull = input('do a git pull origin master?[y/n]: ')
     return
 
 
 def downloadAll():
-    # download()
-    print("in download all")
+    download()
     return
 
 
 def downloadSelected():
-    print("in sel download all")
-    #inputStr = input("Enter the repo numbers to clone[eg: 1 2 3] : ")
-    #downList = inputStr.split()
+    inputStr = input("Enter the repo numbers to clone[eg: 1 2 3] : ")
+    downList = inputStr.split()
 
-    # download()
+    download()
     return
 
 
 def ignoreSelected():
-    # download()
-    print("in ign download")
+    download()
     return
 
 
