@@ -39,3 +39,6 @@ just double click the exe file
 <a href="mailto:arnabshantaanu@gmail.com">
 <img src="https://img.shields.io/badge/Email-arnabshantaanu@gmail.com-blue" alt="Facebook: @arnob.shanto.anu" />
 </a>
+
+## Contribution
+[bijoy](https://github.com/bijoy26) - beautification & testing
