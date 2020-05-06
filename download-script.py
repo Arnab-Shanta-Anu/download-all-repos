@@ -1,5 +1,6 @@
 #!/bin/python3
 import os
+import platform
 import sys
 import json
 import requests
@@ -13,14 +14,33 @@ if (len(repos) == 2 and repos["message"] == "Not Found"):
     print("no user in that name found\nRun program again")
     exit(1)
 
+seperator = ""
+if (platform.system() == "Linux"):
+    seperator = "/"
+
+elif(platform.system() == "Windows"):
+    seperator = "\\"
+
 saveLoc = input("enter directory name to save in[" + os.getcwd() + "]: ")
 
 if (saveLoc == "\n" or saveLoc == ""):
     saveLoc = os.getcwd()
 
+temp = ""
+x = saveLoc.split(seperator, 1)
+if (x[0] == ""):
+    temp = seperator
+x = saveLoc.split(seperator)
+saveLoc = ""
+if (temp != ""):
+    saveLoc = ""+seperator
+
+for X in x:
+    saveLoc = os.path.join(saveLoc, X)
+
 try:
     if not os.path.exists(saveLoc):
-        os.mkdir(saveLoc)
+        os.makedirs(saveLoc)
 
 except OSError as e:
     print(e)
