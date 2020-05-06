@@ -13,11 +13,20 @@ if (len(repos) == 2 and repos["message"] == "Not Found"):
     print("no user in that name found\nRun program again")
     exit(1)
 
-###need to imple###
 saveLoc = input("enter directory name to save in[" + os.getcwd() + "]: ")
 
-if (saveLoc == "\n"):
+if (saveLoc == "\n" or saveLoc == ""):
     saveLoc = os.getcwd()
+
+try:
+    if not os.path.exists(saveLoc):
+        os.mkdir(saveLoc)
+
+except OSError as e:
+    print(e)
+    exit(1)
+
+print("saving in "+saveLoc)
 
 print("totoal repos: ", len(repos))
 
@@ -53,13 +62,18 @@ def download(downList):
 
         try:
             git.Repo.clone_from(repo["clone_url"],
-                                repo["name"], progress=Progress())
+                                saveLoc+"/"+repo["name"], progress=Progress())
             print("cloning ", repo["name"])
 
         except git.exc.GitCommandError as e:
-            print('not an empty directory')
-            # doGitPull = input('do a git pull origin master?[y/n]: ')
-            # will implement this later
+            print(e)
+            doGitPull = input('do a git pull origin master?[y/n]: ')
+            if (doGitPull == "y"):
+                git.Repo(saveLoc + "/" + repo["name"]).remotes.origin.pull()
+            elif (doGitPull == "n"):
+                print("ignoring")
+            else:
+                print("not understood")
 
     return
 
