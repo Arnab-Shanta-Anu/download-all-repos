@@ -1,21 +1,28 @@
-# download-all-repos
-this is a python script to download all git repos in one command
+# Download All Repos
+## A python script to download all git repositories in one command
 -----------
-[download latest](https://github.com/Arnab-Shanta-Anu/download-all-repos/releases/latest)  
-[all versions](https://github.com/Arnab-Shanta-Anu/download-all-repos/releases/)
+# Releases
+<a href="">
+<img src="https://img.shields.io/badge/Download-Latest-brightgreen?style=for-the-badge&logo=appveyor" alt="Download Latest Version" />
+</a>
+ </br>
+<a href="">
+<img src="https://img.shields.io/badge/Download-All%20Versions-green?style=for-the-badge&logo=appveyor" alt="Download All Versions" />
+</a>
+
 ----
-Requirements:  
-- git executable  
-- sudo privilage(linux)
+## Requirements:  
+- Git Executable  
+- Sudo Privilage(Linux)
 -----
-How to use:  
+# How to use:  
 
 
 You need to have git executable for your system if you dont have git then you can download it [here](https://git-scm.com/downloads)
 for ubuntu system you can run the [setup.sh](https://github.com/Arnab-Shanta-Anu/download-all-repos/blob/master/setup.sh) file to get all the requirements  
 
 For linux users:
-first make the binary executable by 
+first make the binary executable by
 ```bash
 sudo chmod +x  download-script-linux-binary
 ```
@@ -26,4 +33,9 @@ then
 follow on screen instructions
 
 For windows users:
-just double click the exe file 
+just double click the exe file
+
+## Contact Me
+<a href="mailto:arnabshantaanu@gmail.com">
+<img src="https://img.shields.io/badge/Email-arnabshantaanu@gmail.com-blue" alt="Facebook: @arnob.shanto.anu" />
+</a>
