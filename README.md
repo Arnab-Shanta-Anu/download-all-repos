@@ -2,11 +2,11 @@
 ## A python script to download all git repositories in one command
 -----------
 # Releases
-<a href="">
+<a href="https://github.com/Arnab-Shanta-Anu/download-all-repos/releases/latest">
 <img src="https://img.shields.io/badge/Download-Latest-brightgreen?style=for-the-badge&logo=appveyor" alt="Download Latest Version" />
 </a>
  </br>
-<a href="">
+<a href="https://github.com/Arnab-Shanta-Anu/download-all-repos/releases">
 <img src="https://img.shields.io/badge/Download-All%20Versions-green?style=for-the-badge&logo=appveyor" alt="Download All Versions" />
 </a>
 
