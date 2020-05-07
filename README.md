@@ -1,4 +1,5 @@
 # Download All Repos
+<a href="#"><img src = "https://img.shields.io/badge/made%20in-python-blue?style=for-the-badge&logo=appveyor" alt = "made in python"/></a>
 ## A python script to download all git repositories in one command
 -----------
 # Releases
@@ -37,8 +38,12 @@ just double click the exe file
 
 ## Contact Me
 <a href="mailto:arnabshantaanu@gmail.com">
-<img src="https://img.shields.io/badge/Email-arnabshantaanu@gmail.com-blue" alt="Facebook: @arnob.shanto.anu" />
+<img src="https://img.shields.io/badge/Email:-arnabshantaanu@gmail.com-red" alt="email:arnabshantaanu@gmail.com" />
+</a><br>
+<a href="https://www.facebook.com/arnob.shanto.anu">
+<img src="https://img.shields.io/badge/Facebook:-Arnob%20Shanto%20Anu-blue" alt="Facebook:arnob.shanto.anu" />
 </a>
+
 
 ## Contribution
 [bijoy](https://github.com/bijoy26) - beautification & testing
