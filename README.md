@@ -26,7 +26,7 @@ For linux users:
 first make the binary executable by
 
 ```bash
-sudo chmod +x  download-script-vX.Y.Z
+sudo chmod +x  download-script-linux-vX.Y.Z
 ```
 here change X.Y.Z as version number
 then
