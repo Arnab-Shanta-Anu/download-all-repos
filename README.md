@@ -38,10 +38,10 @@ just double click the exe file
 
 ## Contact Me
 <a href="mailto:arnabshantaanu@gmail.com">
-<img src="https://img.shields.io/badge/Email-arnabshantaanu@gmail.com-red" alt="email:arnabshantaanu@gmail.com" />
+<img src="https://img.shields.io/badge/Email%20arnabshantaanu@gmail.com-red" alt="email:arnabshantaanu@gmail.com" />
 </a>
 <a href="https://www.facebook.com/arnob.shanto.anu">
-<img src="https://img.shields.io/badge/Email-arnabshantaanu@gmail.com-blue" alt="Facebook:arnob.shanto.anu" />
+<img src="https://img.shields.io/badge/Facebook:%20Arnob%20Shanto%20Anu-blue" alt="Facebook:arnob.shanto.anu" />
 </a>
 
 
