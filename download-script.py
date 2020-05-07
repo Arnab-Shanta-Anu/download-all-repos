@@ -5,6 +5,8 @@ import sys
 import json
 import requests
 import git
+import time
+import logging
 from git.exc import GitCommandError
 
 userName = input("Enter your github username: ")
@@ -13,6 +15,7 @@ repos = json.loads(response.text)
 
 if (len(repos) == 2 and repos["message"] == "Not Found"):
     print("no user in that name found\nRun program again")
+    time.sleep(.5)
     exit(1)
 
 seperator = ""
@@ -48,7 +51,7 @@ except OSError as e:
     exit(1)
 
 print("saving in "+saveLoc)
-
+time.sleep(.5)
 print("totoal repos: ", len(repos))
 
 numOfRepo = 1
@@ -90,11 +93,14 @@ def download(downList):
             print(e)
             doGitPull = input('do a git pull origin master?[y/n]: ')
             if (doGitPull == "y"):
-                git.Repo(saveLoc + "/" + repo["name"]).remotes.origin.pull()
+                git.Repo(saveLoc + seperator + repo["name"]).remotes.origin.pull()
             elif (doGitPull == "n"):
                 print("ignoring")
+                time.sleep(.5)
             else:
                 print("not understood")
+                time.sleep(.5)
+                exit(1)
 
     return
 
