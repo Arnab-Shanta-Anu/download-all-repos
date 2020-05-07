@@ -5,6 +5,7 @@ import sys
 import json
 import requests
 import git
+from git.exc import GitCommandError
 
 userName = input("Enter your github username: ")
 response = requests.get("https://api.github.com/users/"+userName+"/repos")
@@ -85,7 +86,7 @@ def download(downList):
                                 saveLoc+"/"+repo["name"], progress=Progress())
             print("cloning ", repo["name"])
 
-        except git.exc.GitCommandError as e:
+        except GitCommandError as e:
             print(e)
             doGitPull = input('do a git pull origin master?[y/n]: ')
             if (doGitPull == "y"):
