@@ -24,10 +24,13 @@ for ubuntu system you can run the [setup.sh](https://github.com/Arnab-Shanta-Anu
 
 For linux users:
 first make the binary executable by
+
 ```bash
-sudo chmod +x  download-script-linux-binary
+sudo chmod +x  download-script-vX.Y.Z
 ```
+here change X.Y.Z as version number
 then
+
 ```bash
 ./download-script-linux-binary
 ```
