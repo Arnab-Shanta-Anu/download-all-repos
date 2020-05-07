@@ -1,5 +1,5 @@
 # Download All Repos
-<a href="#"><img src = "https://img.shields.io/badge/made%20in-python-blue" alt = "made in python"/></a>
+<a href="#"><img src = "https://img.shields.io/badge/made%20in-python-blue?style=for-the-badge&logo=appveyor" alt = "made in python"/></a>
 ## A python script to download all git repositories in one command
 -----------
 # Releases
