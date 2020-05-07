@@ -38,8 +38,12 @@ just double click the exe file
 
 ## Contact Me
 <a href="mailto:arnabshantaanu@gmail.com">
-<img src="https://img.shields.io/badge/Email-arnabshantaanu@gmail.com-blue" alt="Facebook: @arnob.shanto.anu" />
+<img src="https://img.shields.io/badge/Email-arnabshantaanu@gmail.com-red" alt="email:arnabshantaanu@gmail.com" />
 </a>
+<a href="https://www.facebook.com/arnob.shanto.anu">
+<img src="https://img.shields.io/badge/Email-arnabshantaanu@gmail.com-blue" alt="Facebook:arnob.shanto.anu" />
+</a>
+
 
 ## Contribution
 [bijoy](https://github.com/bijoy26) - beautification & testing
