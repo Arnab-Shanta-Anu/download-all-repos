@@ -5,13 +5,11 @@
 ## Step-1 : Forking
 First **Fork** this repository in your github account. 
 
-### <<INSERT IMAGE >>
 
 ## Step-2 : Cloning
 Now you need to clone your forked repository to your local machine. <br>
 Head back to your **GitHub account**, open the forked repository, click on the *clone* button, click **clone with HTTPS** and then click the *copy to clipboard* icon.
 
-### <<INSERT IMAGE >>
 
 Open **Git Bash** (or some other terminal) and type the following git command:
 
@@ -42,8 +40,6 @@ Go back to your **Github forked Repository** and check if you see your latest up
 ## Step-6 : Create PR
 Now you are ready to create your first pull request! <br>
 Click on **Pull Request**.
-
-### <<INSERT IMAGE >>
 
 <br>Make sure to double check everything.
 <br>See if your github repository is on the the *head-repository* and it is pointing to the *base-repository* (which is *Arnab-Shanta-Anu/download-all-repos*).
