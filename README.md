@@ -39,15 +39,11 @@ follow on screen instructions
 For windows users:
 just double click the exe file
 
-# Contribute to Download-All-Repo
-### Suggest your changes by following the [Contributing Guideline](CONTRIBUTING.md).
+## Contribute to Download-All-Repo
+Suggest your changes by following the [Contributing Guideline](CONTRIBUTING.md).
 
 ## Contributors
 Testing, beautification & contributing guideline - [bijoy26](https://github.com/bijoy26)
-
-## Credits
-- Badge sheilds - [shields.io](https://shields.io/)
-- Contributing guideline template collected from [JU-ForkMe](https://github.com/JU-Computer-Club/JU-ForkMe).
 
 ## Contact Me
 <a href="mailto:arnabshantaanu@gmail.com">
@@ -56,3 +52,7 @@ Testing, beautification & contributing guideline - [bijoy26](https://github.com/
 <a href="https://www.facebook.com/arnob.shanto.anu">
 <img src="https://img.shields.io/badge/Facebook:-Arnob%20Shanto%20Anu-blue" alt="Facebook:arnob.shanto.anu" />
 </a>
+
+## Credits
+- Badge sheilds - [shields.io](https://shields.io/)
+- Contributing guideline template collected from [JU-ForkMe](https://github.com/JU-Computer-Club/JU-ForkMe).
