@@ -39,6 +39,14 @@ follow on screen instructions
 For windows users:
 just double click the exe file
 
+
+## Contribution
+Testing, beautification & contributing guideline - [bijoy26](https://github.com/bijoy26)
+
+## Credits
+Badge sheilds - [shields.io](https://shields.io/)
+Contributing guideline template collected from [JU-ForkMe](https://github.com/JU-Computer-Club/JU-ForkMe). <br>
+
 ## Contact Me
 <a href="mailto:arnabshantaanu@gmail.com">
 <img src="https://img.shields.io/badge/Email:-arnabshantaanu@gmail.com-red" alt="email:arnabshantaanu@gmail.com" />
@@ -46,7 +54,3 @@ just double click the exe file
 <a href="https://www.facebook.com/arnob.shanto.anu">
 <img src="https://img.shields.io/badge/Facebook:-Arnob%20Shanto%20Anu-blue" alt="Facebook:arnob.shanto.anu" />
 </a>
-
-
-## Contribution
-[bijoy](https://github.com/bijoy26) - beautification & testing
