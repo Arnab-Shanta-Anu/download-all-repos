@@ -44,8 +44,8 @@ just double click the exe file
 Testing, beautification & contributing guideline - [bijoy26](https://github.com/bijoy26)
 
 ## Credits
-Badge sheilds - [shields.io](https://shields.io/)
-Contributing guideline template collected from [JU-ForkMe](https://github.com/JU-Computer-Club/JU-ForkMe). <br>
+- Badge sheilds - [shields.io](https://shields.io/)
+- Contributing guideline template collected from [JU-ForkMe](https://github.com/JU-Computer-Club/JU-ForkMe).
 
 ## Contact Me
 <a href="mailto:arnabshantaanu@gmail.com">
