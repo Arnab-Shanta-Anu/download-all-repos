@@ -39,8 +39,8 @@ follow on screen instructions
 For windows users:
 just double click the exe file
 
-## Contribute to Download-All-Repo
-### Follow our [Contributing Guideline](CONTRIBUTING.md) to create a pull request.
+# Contribute to Download-All-Repo
+### Suggest your changes by following the [Contributing Guideline](CONTRIBUTING.md).
 
 ## Contributors
 Testing, beautification & contributing guideline - [bijoy26](https://github.com/bijoy26)
