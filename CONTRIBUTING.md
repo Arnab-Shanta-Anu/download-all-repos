@@ -3,7 +3,7 @@
 ### Follow these steps to contribute to the project:
 
 ## Step-1 : Forking
-First **Fork** this repository in your github account. 
+First **Fork** this repository in your github account.
 
 
 ## Step-2 : Cloning
@@ -20,7 +20,7 @@ Replace *URL* with the copied link.It should look like the following -
 ```
 git clone "https://github.com/Arnab-Shanta-Anu/download-all-repos.git"
 ```
-You will see a new folder named *JU-ForkMe* has been downloaded to your machine on the **directory** that *Git Bash* is on.
+You will see a new folder named *download-all-repos* has been downloaded to your machine on the **directory** that *Git Bash* is on.
 
 ## Step-3 : Local Changes
 From your machine, your may play with the code and update the necessary changes to the files. <br>
@@ -30,7 +30,7 @@ Next you need to push your local repository to your github repository. Write the
 
     ```
     git add -A
-    git commit -m "your name"
+    git commit -m "Your UserName"
     git push origin master
     git status
     ```
@@ -51,6 +51,7 @@ Then click on **Create Pull Request**. <br>
 
 ## Step-7 : Ping & Connect
 
-Wait patiently till the PR is reviewed! <br>
+Wait patiently till the PR is reviewed. <br>
 You will be notified if your pull request needs any revision or else it will be merged.
 
+In the meantime, you can Star :star: this repo and connect with me via [Contact Me](https://github.com/Arnab-Shanta-Anu/download-all-repos/#contact-me) section
