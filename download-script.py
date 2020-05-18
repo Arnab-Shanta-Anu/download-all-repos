@@ -9,6 +9,7 @@ import time
 import logging
 from git.exc import GitCommandError
 
+############## rest api call ####################
 userName = input("Enter your github username: ")
 response = requests.get("https://api.github.com/users/"+userName+"/repos")
 repos = json.loads(response.text)
@@ -93,7 +94,8 @@ def download(downList):
             print(e)
             doGitPull = input('do a git pull origin master?[y/n]: ')
             if (doGitPull == "y"):
-                git.Repo(saveLoc + seperator + repo["name"]).remotes.origin.pull()
+                git.Repo(saveLoc + seperator +
+                         repo["name"]).remotes.origin.pull()
             elif (doGitPull == "n"):
                 print("ignoring")
                 time.sleep(.5)
